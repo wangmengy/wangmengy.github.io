@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>红娘相亲-在这里找到与你共度余生的人</title>
+	<meta name="keywords" content="红娘,相亲,红娘相亲,湖北铸娱科技有限公司,征婚,相亲,找对象,离异,交友,婚恋。">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>铸娱科技</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			width: 100%;
+			overflow: auto;
+		}
+
+		a {
+			color: rgb(122, 122, 122);
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: blue;
+		}
+
+		.loginBox {
+			position: absolute;
+			top: 50px;
+			right: 150px;
+			font-size: 40px;
+			color: #000;
+			display: inline-block;
+		}
+
+		.login {
+			float: left;
+			margin-right: 20px;
+		}
+
+		.register {
+			float: left;
+		}
+
+		.login:hover {
+			color: rgb(112, 0, 255);
+		}
+
+		.register:hover {
+			color: rgb(112, 0, 255);
+		}
+
+		.userName {
+			position: absolute;
+			top: 50px;
+			right: 150px;
+			font-size: 30px;
+			color: rgb(112, 0, 255);
+			border-bottom: 1px solid rgb(112, 0, 255);
+			display: none;
+		}
+
+		.quit {
+			position: absolute;
+			top: 50px;
+			right: 50px;
+			font-size: 30px;
+			color: rgb(112, 0, 255);
+			border-bottom: 1px solid rgb(112, 0, 255);
+			display: none;
+		}
+
+		.topBox {
+			width: 60%;
+			margin: 0 auto;
+			position: absolute;
+			top: 50px;
+			left: 20%;
+		}
+
+		.tabBar {
+			width: 50%;
+			list-style-type: none;
+			float: right;
+		}
+
+		.tabBar li {
+			width: 15%;
+			text-align: center;
+			float: left;
+			border-right: 1px dashed #000;
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		
+		.checkColor {
+			font-weight: bolder;
+		}
+	</style>
+</head>
+
+<body>
+	<img src="https://stage-cdn.17zhuyu.com/pic/web/introduce_v4.png" alt="" style="width: 100%;height: auto;">
+	<!-- <div class="loginBox">
+		<div class="login" >登录</div>
+		<div class="register" >注册</div>
+	</div> -->
+	<div class="topBox">
+		<ul class="tabBar">
+			<li class="checkColor">首页</li>
+			<li>伊对缘</li>
+			<li>趣牵手</li>
+			<!-- <li>抱鱼</li> -->
+			<li>隐私政策</li>
+			<li style='border: none;'>用户协议</li>
+		</ul>
+	</div>
+	<div class="userName"></div>
+	<div class="quit">退出</div>
+	<div style="width: 100%;font-size: 15px;color: rgb(122, 122, 122);text-align: center;margin-top: -150px;">
+		<div>Copyright © 湖北铸娱科技有限公司</div>
+		<div style="margin-top: 10px;">
+			<a href="https://stage-cdn.17zhuyu.com/pic/web/wangwen.jpg">鄂网文【2019】0399-020号</a> -
+			<a href="http://www.beian.miit.gov.cn">鄂ICP备19003244号-1</a>
+		</div>
+		<span>地址：湖北省随州市曾都区青年路66号25幢1单元104号</span>
+		<div>电话：15384023248</div>
+	</div>
+	<script>
+		// let login = document.getElementsByClassName('login')[0];
+		// let register = document.getElementsByClassName('register')[0];
+		// let quit = document.getElementsByClassName('quit')[0];
+		// let loginBox = document.getElementsByClassName('loginBox')[0];
+		// let userName = document.getElementsByClassName('userName')[0];
+		let li = document.getElementsByTagName('li');
+		
+		// // 伊对缘
+		// li[li.length - 5].onclick = function() {
+		// 	window.location.href = 'indexYdy.html'
+		// }
+		
+		// // 趣牵手
+		// li[li.length - 4].onclick = function() {
+		// 	window.location.href = 'indexQqs.html'
+		// }
+		
+		// // 抱鱼
+		// li[li.length - 3].onclick = function() {
+		// 	window.location.href = 'indexBy.html'
+		// }
+
+		// 伊对缘
+		li[li.length - 4].onclick = function() {
+			window.location.href = 'indexYdy.html'
+		}
+		
+		// 趣牵手
+		li[li.length - 3].onclick = function() {
+			window.location.href = 'indexQqs.html'
+		}
+
+		// 隐私政策
+		li[li.length - 2].onclick = function() {
+			window.location.href = 'privacyPolicy.html'
+		}
+		
+		// 用户协议
+		li[li.length - 1].onclick = function() {
+			window.location.href = 'agreement.html'
+		}
+
+		// 登录
+
+		// login.onclick = function () {
+		// 	console.log('login')
+		// 	window.location.href = 'login.html';
+		// }
+		// register.onclick = function () {
+		// 	console.log('register')
+		// 	window.location.href = 'register.html';
+		// }
+		// quit.onclick = function () {
+		// 	console.log('register')
+		// 	localStorage.removeItem('name');
+		// 	loginBox.style.display = 'inline-block';
+		// 	quit.style.display = 'none';
+		// 	userName.style.display = 'none';
+		// }
+
+		// let locaCookie = localStorage.getItem('name');
+		// if (!!locaCookie) {
+		// 	loginBox.style.display = 'none';
+		// 	quit.style.display = 'inline-block';
+		// 	userName.style.display = 'inline-block';
+		// 	userName.innerHTML = locaCookie
+		// }
+	</script>
+</body>
+
+</html>
