@@ -132,7 +132,7 @@ li {
 .maxbox li:nth-child(6) {
   -webkit-transform: rotateY(90deg) translateZ(100px);
 }
-.box:hover ol li:nth-child(1) {
+.box .changeClass li:nth-child(1) {
   -webkit-transform: translateZ(300px);
   width: 400px;
   height: 400px;
@@ -140,7 +140,7 @@ li {
   left: -100px;
   top: -100px;
 }
-.box:hover ol li:nth-child(2) {
+.box .changeClass li:nth-child(2) {
   -webkit-transform: rotateX(180deg) translateZ(300px);
   width: 400px;
   height: 400px;
@@ -148,7 +148,7 @@ li {
   left: -100px;
   top: -100px;
 }
-.box:hover ol li:nth-child(3) {
+.box .changeClass li:nth-child(3) {
   -webkit-transform: rotateX(-90deg) translateZ(300px);
   width: 400px;
   height: 400px;
@@ -156,7 +156,7 @@ li {
   left: -100px;
   top: -100px;
 }
-.box:hover ol li:nth-child(4) {
+.box .changeClass li:nth-child(4) {
   -webkit-transform: rotateX(90deg) translateZ(300px);
   width: 400px;
   height: 400px;
@@ -164,7 +164,7 @@ li {
   left: -100px;
   top: -100px;
 }
-.box:hover ol li:nth-child(5) {
+.box .changeClass li:nth-child(5) {
   -webkit-transform: rotateY(-90deg) translateZ(300px);
   width: 400px;
   height: 400px;
@@ -172,7 +172,7 @@ li {
   left: -100px;
   top: -100px;
 }
-.box:hover ol li:nth-child(6) {
+.box .changeClass li:nth-child(6) {
   -webkit-transform: rotateY(90deg) translateZ(300px);
   width: 400px;
   height: 400px;

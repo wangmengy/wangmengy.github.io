@@ -105,18 +105,12 @@
             justify-content: center;
             color: #fff;
             font-size: 80px;
-            animation: down 800ms infinite;
+            animation: down 800ms linear infinite;
         }
         @keyframes down {
-            0% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(50px);
-            }
-            100% {
-                transform: translateY(0px);
-            }
+         25% {-webkit-transform: translateY(-15px);}
+         50%, 100% {-webkit-transform: translateY(0);}
+         75% {-webkit-transform: translateY(15px);}
         }
     </style>
 </head>
@@ -156,7 +150,7 @@
                         <li></li>
                         <li></li>
                     </ul>
-                    <ol class="maxbox">
+                    <ol class="maxbox changeClass">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -510,6 +504,18 @@
         setTimeout(() => {
             let element = document.querySelectorAll('.gift_box')
             element && element[0].classList.add('gift_boxShow')
+        }, 4000);
+
+        let flag = false
+        let change = document.querySelectorAll('.maxbox')
+        setInterval(() => {
+            if (!flag) { // 大
+                flag = true
+                change && change[0].classList.add('changeClass')
+            } else { // 收
+                flag = false
+                change && change[0].classList.remove('changeClass')
+            }
         }, 4000);
     </script>
 </body>
