@@ -46,13 +46,7 @@
             height: 50%;
             overflow: hidden;
             background: #a27bcc;
-            background: -moz-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a27bcc), color-stop(100%, #6c5299));
-            background: -webkit-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-            background: -o-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-            background: -ms-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-            background: radial-gradient(ellipse at center, #a27bcc 0%, #6c5299 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a27bcc', endColorstr='#6c5299', GradientType=1);
+            background: radial-gradient(47.82% 27.06% at 50% 38.8%, #AA7DEE 0%, #7B56BC 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -104,6 +98,13 @@
             }
         }
         #down{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 80px;
             animation: down 800ms infinite;
         }
         @keyframes down {
@@ -111,7 +112,7 @@
                 transform: translateY(0px);
             }
             50% {
-                transform: translateY(80px);
+                transform: translateY(50px);
             }
             100% {
                 transform: translateY(0px);
@@ -140,7 +141,7 @@
             <div class="div_word div_h1">happy birthday</div>
             <div class="div_word div_p" id='text'>Amalia Nurul Ifa</div>
             <div class="gift_box" onclick="nextTick()">
-                <svg t="1625464405081" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4370" width="128" height="128"><path d="M771.512499 509.49597 511.614214 959.653483 251.715929 509.49597 414.441057 509.49597 414.441057 64.132646 608.786347 64.132646 608.786347 509.49597Z" p-id="4371" fill="#ffffff" id="down"></path></svg>
+                <div id="down">↓</div>
             </div>
         </div>
         <div class="moveBtm">
